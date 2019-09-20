@@ -1,0 +1,12 @@
+--cpu Cortex-M0
+".\output\main.o"
+".\output\gpio.o"
+".\output\delay.o"
+".\output\pad_mux_ctrl.o"
+"..\..\..\Lib\syd8821_ble_slave.lib"
+".\output\startup_armcm0.o"
+".\output\system_armcm0.o"
+--library_type=microlib --strict --scatter ".\output\Module_samples.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Module_samples.map" -o .\output\Module_samples.axf

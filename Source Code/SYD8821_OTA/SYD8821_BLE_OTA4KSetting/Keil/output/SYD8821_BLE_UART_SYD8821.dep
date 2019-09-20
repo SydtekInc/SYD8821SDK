@@ -1,0 +1,159 @@
+Dependencies for Project 'SYD8821_BLE_UART', Target 'SYD8821': (DO NOT MODIFY !)
+F (..\main.c)(0x5D803775)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I..\..\..\Include -I..\..\..\BLE -I..\..\..\Rtt -I..\..\SYD8821_BLE_OTA_Double -I..\..\..\Lib -I..\profile-I "F:\SYD8801\SYD8821\SYD8821_SDK\Source Code\SYD8821_OTA\SYD8821_BLE_OTA4KSetting\Keil\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\main.o --omf_browse .\output\main.crf --depend .\output\main.d)
+I (..\..\..\Include\ARMCM0.h)(0x5C0E19A2)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
+I (..\..\..\Include\gpio.h)(0x5C0DD83E)
+I (..\..\..\Include\debug.h)(0x5C127641)
+I (..\..\SYD8821_BLE_OTA_Double\config.h)(0x5D78AD3D)
+I (..\..\..\Lib\ble_slave.h)(0x5D78909A)
+I (..\..\..\Include\uart.h)(0x5C0E0982)
+I (..\..\..\Include\queue.h)(0x5C0DD7D5)
+I (..\..\..\Include\delay.h)(0x57883961)
+I (..\..\..\BLE\otaV30.h)(0x5D788CEA)
+I (..\config.h)(0x5C0E244E)
+I (..\profile\SYD_ble_service_Profile.h)(0x5C2C50E5)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x55AEF5F2)
+I (..\..\..\Include\timer.h)(0x5C0E05DE)
+I (..\..\..\Include\pad_mux_ctrl.h)(0x5C0DD83E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55AEF5F2)
+I (..\..\..\Rtt\Debuglog.h)(0x5C0F51AE)
+F (..\..\..\Source\gpio.c)(0x5C0DD9AC)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I..\..\..\Include -I..\..\..\BLE -I..\..\..\Rtt -I..\..\SYD8821_BLE_OTA_Double -I..\..\..\Lib -I..\profile-I "F:\SYD8801\SYD8821\SYD8821_SDK\Source Code\SYD8821_OTA\SYD8821_BLE_OTA4KSetting\Keil\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\gpio.o --omf_browse .\output\gpio.crf --depend .\output\gpio.d)
+I (..\..\..\Include\gpio.h)(0x5C0DD83E)
+I (..\..\..\Include\armcm0.h)(0x5C0E19A2)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
+F (..\..\..\Source\delay.c)(0x5C0FB993)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I..\..\..\Include -I..\..\..\BLE -I..\..\..\Rtt -I..\..\SYD8821_BLE_OTA_Double -I..\..\..\Lib -I..\profile-I "F:\SYD8801\SYD8821\SYD8821_SDK\Source Code\SYD8821_OTA\SYD8821_BLE_OTA4KSetting\Keil\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\delay.o --omf_browse .\output\delay.crf --depend .\output\delay.d)
+I (..\..\..\Include\delay.h)(0x57883961)
+I (..\..\..\Include\ARMCM0.h)(0x5C0E19A2)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
+F (..\..\..\Source\pad_mux_ctrl.c)(0x5C0DD83E)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I..\..\..\Include -I..\..\..\BLE -I..\..\..\Rtt -I..\..\SYD8821_BLE_OTA_Double -I..\..\..\Lib -I..\profile-I "F:\SYD8801\SYD8821\SYD8821_SDK\Source Code\SYD8821_OTA\SYD8821_BLE_OTA4KSetting\Keil\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\pad_mux_ctrl.o --omf_browse .\output\pad_mux_ctrl.crf --depend .\output\pad_mux_ctrl.d)
+I (..\..\..\Include\pad_mux_ctrl.h)(0x5C0DD83E)
+I (..\..\..\Include\ARMCM0.h)(0x5C0E19A2)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55AEF5F2)
+F (..\..\..\Source\uart.c)(0x5C0E0982)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I..\..\..\Include -I..\..\..\BLE -I..\..\..\Rtt -I..\..\SYD8821_BLE_OTA_Double -I..\..\..\Lib -I..\profile-I "F:\SYD8801\SYD8821\SYD8821_SDK\Source Code\SYD8821_OTA\SYD8821_BLE_OTA4KSetting\Keil\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\uart.o --omf_browse .\output\uart.crf --depend .\output\uart.d)
+I (..\..\..\Include\uart.h)(0x5C0E0982)
+I (..\..\..\Include\ARMCM0.h)(0x5C0E19A2)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
+I (..\..\..\Include\queue.h)(0x5C0DD7D5)
+I (..\..\..\Include\uart2.h)(0x5C0DD7F3)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x55AEF5F2)
+F (..\..\..\Source\debug.c)(0x5C109DB0)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I..\..\..\Include -I..\..\..\BLE -I..\..\..\Rtt -I..\..\SYD8821_BLE_OTA_Double -I..\..\..\Lib -I..\profile-I "F:\SYD8801\SYD8821\SYD8821_SDK\Source Code\SYD8821_OTA\SYD8821_BLE_OTA4KSetting\Keil\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\debug.o --omf_browse .\output\debug.crf --depend .\output\debug.d)
+I (..\..\..\Include\debug.h)(0x5C127641)
+I (..\..\..\Include\ARMCM0.h)(0x5C0E19A2)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
+I (..\..\SYD8821_BLE_OTA_Double\config.h)(0x5D78AD3D)
+I (..\..\..\Lib\ble_slave.h)(0x5D78909A)
+I (..\..\..\Include\uart.h)(0x5C0E0982)
+I (..\..\..\Include\queue.h)(0x5C0DD7D5)
+I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x55AEF5F2)
+I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55AEF5F2)
+F (..\..\..\Source\queue.c)(0x5C0DD17D)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I..\..\..\Include -I..\..\..\BLE -I..\..\..\Rtt -I..\..\SYD8821_BLE_OTA_Double -I..\..\..\Lib -I..\profile-I "F:\SYD8801\SYD8821\SYD8821_SDK\Source Code\SYD8821_OTA\SYD8821_BLE_OTA4KSetting\Keil\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\queue.o --omf_browse .\output\queue.crf --depend .\output\queue.d)
+I (..\..\..\Include\queue.h)(0x5C0DD7D5)
+I (..\..\..\Include\armcm0.h)(0x5C0E19A2)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x55AEF5F2)
+F (..\..\..\Source\timer.c)(0x5C0E05DE)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I..\..\..\Include -I..\..\..\BLE -I..\..\..\Rtt -I..\..\SYD8821_BLE_OTA_Double -I..\..\..\Lib -I..\profile-I "F:\SYD8801\SYD8821\SYD8821_SDK\Source Code\SYD8821_OTA\SYD8821_BLE_OTA4KSetting\Keil\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\timer.o --omf_browse .\output\timer.crf --depend .\output\timer.d)
+I (..\..\..\Include\timer.h)(0x5C0E05DE)
+I (..\..\..\Include\ARMCM0.h)(0x5C0E19A2)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
+F (..\..\..\Lib\syd8821_ble_slave.lib)(0x5D78ADDE)()
+F (..\..\..\BLE\otaV30.c)(0x5D78C66A)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I..\..\..\Include -I..\..\..\BLE -I..\..\..\Rtt -I..\..\SYD8821_BLE_OTA_Double -I..\..\..\Lib -I..\profile-I "F:\SYD8801\SYD8821\SYD8821_SDK\Source Code\SYD8821_OTA\SYD8821_BLE_OTA4KSetting\Keil\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\otav30.o --omf_browse .\output\otav30.crf --depend .\output\otav30.d)
+I (..\..\..\BLE\otaV30.h)(0x5D788CEA)
+I (..\..\..\Include\ARMCM0.h)(0x5C0E19A2)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
+I (..\..\SYD8821_BLE_OTA_Double\config.h)(0x5D78AD3D)
+I (..\..\..\Lib\ble_slave.h)(0x5D78909A)
+I (..\..\..\Include\debug.h)(0x5C127641)
+I (..\..\..\Include\uart.h)(0x5C0E0982)
+I (..\..\..\Include\queue.h)(0x5C0DD7D5)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x55AEF5F2)
+I (..\..\..\Include\delay.h)(0x57883961)
+I (..\..\..\Rtt\DebugLog.h)(0x5C0F51AE)
+I (..\..\..\Include\gpio.h)(0x5C0DD83E)
+F (..\..\..\Rtt\SEGGER_RTT.c)(0x5B3457F4)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I..\..\..\Include -I..\..\..\BLE -I..\..\..\Rtt -I..\..\SYD8821_BLE_OTA_Double -I..\..\..\Lib -I..\profile-I "F:\SYD8801\SYD8821\SYD8821_SDK\Source Code\SYD8821_OTA\SYD8821_BLE_OTA4KSetting\Keil\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\segger_rtt.o --omf_browse .\output\segger_rtt.crf --depend .\output\segger_rtt.d)
+I (..\..\..\Rtt\DebugLog.h)(0x5C0F51AE)
+I (..\..\SYD8821_BLE_OTA_Double\config.h)(0x5D78AD3D)
+I (..\..\..\Include\ARMCM0.h)(0x5C0E19A2)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
+I (..\..\..\Lib\ble_slave.h)(0x5D78909A)
+F (..\..\..\Rtt\SEGGER_RTT_printf.c)(0x5C0E0E62)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I..\..\..\Include -I..\..\..\BLE -I..\..\..\Rtt -I..\..\SYD8821_BLE_OTA_Double -I..\..\..\Lib -I..\profile-I "F:\SYD8801\SYD8821\SYD8821_SDK\Source Code\SYD8821_OTA\SYD8821_BLE_OTA4KSetting\Keil\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\segger_rtt_printf.o --omf_browse .\output\segger_rtt_printf.crf --depend .\output\segger_rtt_printf.d)
+I (..\..\..\Rtt\DebugLog.h)(0x5C0F51AE)
+I (..\..\SYD8821_BLE_OTA_Double\config.h)(0x5D78AD3D)
+I (..\..\..\Include\ARMCM0.h)(0x5C0E19A2)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
+I (..\..\..\Lib\ble_slave.h)(0x5D78909A)
+F (..\..\..\Rtt\SEGGER_RTT_Syscalls_KEIL.c)(0x5AEBBBC0)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I..\..\..\Include -I..\..\..\BLE -I..\..\..\Rtt -I..\..\SYD8821_BLE_OTA_Double -I..\..\..\Lib -I..\profile-I "F:\SYD8801\SYD8821\SYD8821_SDK\Source Code\SYD8821_OTA\SYD8821_BLE_OTA4KSetting\Keil\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\segger_rtt_syscalls_keil.o --omf_browse .\output\segger_rtt_syscalls_keil.crf --depend .\output\segger_rtt_syscalls_keil.d)
+I (..\..\..\Rtt\DebugLog.h)(0x5C0F51AE)
+I (..\..\SYD8821_BLE_OTA_Double\config.h)(0x5D78AD3D)
+I (..\..\..\Include\ARMCM0.h)(0x5C0E19A2)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)
+I (..\..\..\Lib\ble_slave.h)(0x5D78909A)
+F (RTE\Device\ARMCM0\startup_ARMCM0.s)(0x5B052979)(--cpu Cortex-M0 --li -g --apcs=interwork -I "F:\SYD8801\SYD8821\SYD8821_SDK\Source Code\SYD8821_OTA\SYD8821_BLE_OTA4KSetting\Keil\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include--pd "__UVISION_VERSION SETA 516" --pd "_RTE_ SETA 1" --pd "ARMCM0 SETA 1"-o .\output\startup_armcm0.o --depend .\output\startup_armcm0.d)
+F (RTE\Device\ARMCM0\system_ARMCM0.c)(0x5AA6424C)(-c --cpu Cortex-M0 --li -g -O0 --apcs=interwork -I..\..\..\Include -I..\..\..\BLE -I..\..\..\Rtt -I..\..\SYD8821_BLE_OTA_Double -I..\..\..\Lib -I..\profile-I "F:\SYD8801\SYD8821\SYD8821_SDK\Source Code\SYD8821_OTA\SYD8821_BLE_OTA4KSetting\Keil\RTE"-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\system_armcm0.o --omf_browse .\output\system_armcm0.crf --depend .\output\system_armcm0.d)
+I (..\..\..\Include\ARMCM0.h)(0x5C0E19A2)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cm0.h)(0x5625B70C)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmInstr.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\cmsis_armcc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include\core_cmFunc.h)(0x5625A350)
+I (D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x55D41F08)

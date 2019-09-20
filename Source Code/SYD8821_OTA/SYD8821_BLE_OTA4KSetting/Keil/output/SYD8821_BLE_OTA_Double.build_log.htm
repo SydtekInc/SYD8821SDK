@@ -1,0 +1,82 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.16.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: PIAORAN RAN, chengdongdianzi, LIC=32B2Z-JUFSU-QD7KD-8IB0B-IHFE6-8U8QW
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.16.0.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 (build 20)
+Assembler:       Armasm.exe V5.06 (build 20)
+Linker/Locator:  ArmLink.exe V5.06 (build 20)
+Library Manager: ArmAr.exe V5.06 (build 20)
+Hex Converter:   FromElf.exe V5.06 (build 20)
+CPU DLL:         SARMCM3.DLL V5.16.0.0
+Dialog DLL:      DARMCM1.DLL V1.12.0.0
+Target DLL:      Segger\JL2CM3.dll V2.99.15.2
+Dialog DLL:      TARMCM1.DLL V1.9.0.0
+ 
+<h2>Project:</h2>
+F:\SYD8801\SYD8821\SYD8821_SDK\Source Code\SYD8821_OTA\SYD8821_BLE_OTA4KSetting\Keil\SYD8821_BLE_UART.uvprojx
+Project File Date:  09/11/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 (build 20)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'SYD8821'
+compiling gpio.c...
+compiling SEGGER_RTT_printf.c...
+assembling startup_ARMCM0.s...
+compiling pad_mux_ctrl.c...
+compiling uart.c...
+compiling delay.c...
+compiling timer.c...
+compiling queue.c...
+compiling SEGGER_RTT.c...
+compiling debug.c...
+compiling otaV30.c...
+compiling main.c...
+compiling SEGGER_RTT_Syscalls_KEIL.c...
+compiling system_ARMCM0.c...
+linking...
+Program Size: Code=29744 RO-data=1612 RW-data=276 ZI-data=26940  
+FromELF: creating hex file...
+After Build - User command #1: "Output\HEX2BIN.EXE" "Output\SYD8821_BLE_OTA_Double.hex"
+hex2bin v1.0.6, Copyright (C) 1998 Jacques Pelletier
+checksum extensions Copyright (C) 2004 Rockwell Automation
+improved P.G. 2007
+Lowest address  = 00000000
+Highest address = 00007B8F
+Pad Byte        = FF
+8-bit Checksum = 9C
+".\output\SYD8821_BLE_OTA_Double.axf" - 0 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::Device:Startup:1.0.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: Startup Version: 1.0.1
+   * Component: CORE Version: 4.3.0
+
+<h2>Collection of Component include folders:</h2>
+  F:\SYD8801\SYD8821\SYD8821_SDK\Source Code\SYD8821_OTA\SYD8821_BLE_OTA4KSetting\Keil\RTE
+  D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::Device:Startup:1.0.1
+      Source file:   Device\ARM\ARMCM0\Source\ARM\startup_ARMCM0.s
+      Include file:  Device\ARM\ARMCM0\Include\ARMCM0.h
+      Source file:   Device\ARM\ARMCM0\Source\system_ARMCM0.c
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>

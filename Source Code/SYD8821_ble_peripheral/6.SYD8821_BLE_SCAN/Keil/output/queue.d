@@ -1,0 +1,10 @@
+.\output\queue.o: ..\..\..\Source\queue.c
+.\output\queue.o: ..\..\..\Include\queue.h
+.\output\queue.o: ..\..\..\Include\armcm0.h
+.\output\queue.o: D:\keil_V516\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\core_cm0.h
+.\output\queue.o: D:\keil_V516\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\queue.o: D:\keil_V516\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_version.h
+.\output\queue.o: D:\keil_V516\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_compiler.h
+.\output\queue.o: D:\keil_V516\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_armcc.h
+.\output\queue.o: D:\keil_V516\ARM\PACK\ARM\CMSIS\5.3.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h
+.\output\queue.o: D:\keil_V516\ARM\ARMCC\Bin\..\include\string.h

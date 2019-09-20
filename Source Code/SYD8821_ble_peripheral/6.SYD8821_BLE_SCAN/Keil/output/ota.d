@@ -1,0 +1,16 @@
+.\output\ota.o: ..\..\..\BLE\ota.c
+.\output\ota.o: ..\..\..\BLE\ota.h
+.\output\ota.o: ..\..\..\Include\ARMCM0.h
+.\output\ota.o: D:\keil_V516\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\core_cm0.h
+.\output\ota.o: D:\keil_V516\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\ota.o: D:\keil_V516\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_version.h
+.\output\ota.o: D:\keil_V516\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_compiler.h
+.\output\ota.o: D:\keil_V516\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include\cmsis_armcc.h
+.\output\ota.o: D:\keil_V516\ARM\PACK\ARM\CMSIS\5.3.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h
+.\output\ota.o: ..\config.h
+.\output\ota.o: ..\..\..\Lib\ble_slave.h
+.\output\ota.o: ..\..\..\Include\debug.h
+.\output\ota.o: ..\..\..\Include\uart.h
+.\output\ota.o: ..\..\..\Include\queue.h
+.\output\ota.o: D:\keil_V516\ARM\ARMCC\Bin\..\include\string.h
+.\output\ota.o: ..\..\..\Include\delay.h

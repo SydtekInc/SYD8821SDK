@@ -1,0 +1,78 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.16.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: piao Microsoft, Microsoft, LIC=JL201-CUM5R-UG47Q-NADJG-BDKAW-D7K2Z
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.16.0.0
+Toolchain Path:  D:\keil_V516\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 (build 20)
+Assembler:       Armasm.exe V5.06 (build 20)
+Linker/Locator:  ArmLink.exe V5.06 (build 20)
+Library Manager: ArmAr.exe V5.06 (build 20)
+Hex Converter:   FromElf.exe V5.06 (build 20)
+CPU DLL:         SARMCM3.DLL V5.16.0.0
+Dialog DLL:      DARMCM1.DLL V1.12.0.0
+Target DLL:      Segger\JL2CM3.dll V2.99.15.2
+Dialog DLL:      TARMCM1.DLL V1.9.0.0
+ 
+<h2>Project:</h2>
+F:\SYD8801\SYD8821\SYD8821_SDK\Source Code\SYD8821_peripheral_misc\wdt_IRQ\Keil\Module_samples.uvprojx
+Project File Date:  12/13/2018
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 (build 20)', folder: 'D:\keil_V516\ARM\ARMCC\Bin'
+Rebuild target 'SYD8821'
+compiling delay.c...
+compiling main.c...
+compiling gpio.c...
+compiling debug.c...
+compiling pad_mux_ctrl.c...
+compiling uart.c...
+compiling queue.c...
+assembling startup_ARMCM0.s...
+compiling wdt.c...
+compiling system_ARMCM0.c...
+linking...
+Program Size: Code=25718 RO-data=798 RW-data=172 ZI-data=10668  
+FromELF: creating hex file...
+After Build - User command #1: "Output\HEX2BIN.EXE" "Output\Module_samples.hex"
+hex2bin v1.0.6, Copyright (C) 1998 Jacques Pelletier
+checksum extensions Copyright (C) 2004 Rockwell Automation
+improved P.G. 2007
+Lowest address  = 00000000
+Highest address = 0000683F
+Pad Byte        = FF
+8-bit Checksum = CB
+".\output\Module_samples.axf" - 0 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+   * Component: Startup Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  F:\SYD8801\SYD8821\SYD8821_SDK\Source Code\SYD8821_peripheral_misc\wdt_IRQ\Keil\RTE
+  D:\keil_V516\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  D:\keil_V516\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM0\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+
+   * Component: ARM::Device:Startup:1.0.1
+      Include file:  Device\ARM\ARMCM0\Include\ARMCM0.h
+      Source file:   Device\ARM\ARMCM0\Source\ARM\startup_ARMCM0.s
+      Source file:   Device\ARM\ARMCM0\Source\system_ARMCM0.c
+Build Time Elapsed:  00:00:06
+</pre>
+</body>
+</html>

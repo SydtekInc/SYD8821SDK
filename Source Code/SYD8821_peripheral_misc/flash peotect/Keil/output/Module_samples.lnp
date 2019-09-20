@@ -1,0 +1,20 @@
+--cpu Cortex-M0
+".\output\main.o"
+".\output\gpio.o"
+".\output\delay.o"
+".\output\pad_mux_ctrl.o"
+".\output\uart.o"
+".\output\debug.o"
+".\output\queue.o"
+".\output\timer.o"
+"..\..\..\Lib\syd8821_ble_slave.lib"
+".\output\ota.o"
+".\output\segger_rtt.o"
+".\output\segger_rtt_printf.o"
+".\output\segger_rtt_syscalls_keil.o"
+".\output\startup_armcm0.o"
+".\output\system_armcm0.o"
+--strict --scatter ".\output\Module_samples.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Module_samples.map" -o .\output\Module_samples.axf

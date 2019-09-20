@@ -1,0 +1,187 @@
+2017年12月5日星期二 中国标准时间下午9:45:31
+*****************BLE： UART36******************
+
+***** onTestBroadcastRecord *****
+result = true, Has 0xfee7 in broadcast record
+
+广播包：03 19 05 00 02 01 05 05 03 01 00 E7 FE 09 FF 00 00 E2 BF 8B 65 28 36 07 09 55 41 52 54 33 36 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+
+***** onTestManufatureData *****
+resut= true, 广播包中 manufacture specific data 字段中MAC地址校验成功.
+
+***** onDiscoverService *****
+result = true, DiscoverService success
+Discovered Services
+ServiceUUID: 00001800-0000-1000-8000-00805f9b34fb
+ServiceUUID: 00001801-0000-1000-8000-00805f9b34fb
+ServiceUUID: 0000180a-0000-1000-8000-00805f9b34fb
+ServiceUUID: 0000180f-0000-1000-8000-00805f9b34fb
+ServiceUUID: 00000001-0000-1000-8000-00805f9b34fb
+ServiceUUID: 0000fee7-0000-1000-8000-00805f9b34fb
+ServiceUUID: 0000ff00-0000-1000-8000-00805f9b34fb
+
+
+***** onTestHasWeChatService *****
+result = 0
+has WeChatService and has profile 
+
+***** onTestHasReadCharacteristic *****
+result = true, has read characteristic
+
+***** onTestPedometerMeasureCharacteristic *****
+result = true, has WeChat PedometerMeasurement Characteristic
+
+***** onTestPedometerTargetCharacteristic *****
+result = true, Has Wechat PedometerTarget Characteristic
+
+***** onTestReadCharacteristicPermisson *****
+result = true, ReadCharacteristic can read
+
+**** onTestMeasurementCharacteristicProperties ****
+result = true, PedometerMeasureCharacteristic can indicate/notify and read !
+
+****onTestTargetCharacteristicProperties****
+result = true, PedometerTargetCharacteristic can write read and indcate!
+
+***** onTestStartIndicating *****
+result = true, can Start Indicate
+
+***** onConnected *****
+result = true, connected
+
+------onDataRead------
+data length = 10
+data dump = 07 00 00 00 00 00 00 00 00 00 
+
+*****onPedometerMeasurementRead*****
+result = true,Received Data:
+步数：0; 距离：0; 卡路里：0
+
+------onDataRead------
+data length = 4
+data dump = 01 A4 76 00 
+
+*****onPedometerTargetRead*****
+result = true,Received Data:
+步数：30372
+
+*****onPedometerTargetWrite*****
+result = true,Write Data:
+数据包一共[4]字节 一共分成[1]数据包 每个数据大小为[20]字节 全部数据包发送成功
+
+2018年1月18日星期四 中国标准时间下午8:01:47
+*****************BLE： UARTF******************
+
+***** onTestBroadcastRecord *****
+result = true, Has 0xfee7 in broadcast record
+
+广播包：03 19 05 00 02 01 05 05 03 01 00 E7 FE 09 FF 00 00 D5 61 93 4D 4C 66 06 09 55 41 52 54 46 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+
+***** onTestManufatureData *****
+resut= true, 广播包中 manufacture specific data 字段中MAC地址校验成功.
+
+***** onDiscoverService *****
+result = true, DiscoverService success
+Discovered Services
+ServiceUUID: 00001800-0000-1000-8000-00805f9b34fb
+ServiceUUID: 00001801-0000-1000-8000-00805f9b34fb
+ServiceUUID: 0000180a-0000-1000-8000-00805f9b34fb
+ServiceUUID: 0000180f-0000-1000-8000-00805f9b34fb
+ServiceUUID: 00000001-0000-1000-8000-00805f9b34fb
+ServiceUUID: 0000fee7-0000-1000-8000-00805f9b34fb
+ServiceUUID: 0000ff00-0000-1000-8000-00805f9b34fb
+
+
+***** onTestHasWeChatService *****
+result = 0
+has WeChatService and has profile 
+
+***** onTestHasReadCharacteristic *****
+result = true, has read characteristic
+
+***** onTestPedometerMeasureCharacteristic *****
+result = true, has WeChat PedometerMeasurement Characteristic
+
+***** onTestPedometerTargetCharacteristic *****
+result = true, Has Wechat PedometerTarget Characteristic
+
+***** onTestReadCharacteristicPermisson *****
+result = true, ReadCharacteristic can read
+
+**** onTestMeasurementCharacteristicProperties ****
+result = true, PedometerMeasureCharacteristic can indicate/notify and read !
+
+****onTestTargetCharacteristicProperties****
+result = true, PedometerTargetCharacteristic can write read and indcate!
+
+***** onTestStartIndicating *****
+result = true, can Start Indicate
+
+***** onConnected *****
+result = true, connected
+
+------onDataRead------
+data length = 10
+data dump = 07 00 00 00 00 00 00 00 00 00 
+
+*****onPedometerMeasurementRead*****
+result = true,Received Data:
+步数：0; 距离：0; 卡路里：0
+
+------onDataRead------
+data length = 4
+data dump = 01 FF 4A 00 
+
+*****onPedometerTargetRead*****
+result = true,Received Data:
+步数：19199
+
+*****onPedometerTargetWrite*****
+result = true,Write Data:
+数据包一共[4]字节 一共分成[1]数据包 每个数据大小为[20]字节 全部数据包发送成功
+
+------onDataReceived------
+data length = 10
+data dump = 07 00 00 00 00 00 00 00 00 00 
+data receive seq = 3
+
+*****onPedometerMeasurementIndicate*****
+result = true,Received Data:
+步数：0; 距离：0; 卡路里：0
+
+------onDataReceived------
+data length = 4
+data dump = 01 C6 96 00 
+data receive seq = 4
+
+*****onPedometerTargetIndicate*****
+result = true,Received Data:
+步数：38598
+
+2018年5月4日星期五 中国标准时间下午4:06:37
+*****************BLE： YL107******************
+
+***** onTestBroadcastRecord *****
+result = true, Has 0xfee7 in broadcast record
+
+广播包：06 09 59 4C 31 30 37 02 01 06 05 03 01 00 E7 FE 09 FF 02 00 EA 01 05 8C E5 D7 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+
+***** onTestManufatureData *****
+resut= true, 广播包中 manufacture specific data 字段中MAC地址校验成功.
+
+
+2018年5月4日星期五 中国标准时间下午4:07:24
+*****************BLE： YL107******************
+
+***** onTestBroadcastRecord *****
+result = true, Has 0xfee7 in broadcast record
+
+广播包：06 09 59 4C 31 30 37 02 01 06 05 03 01 00 E7 FE 09 FF 02 00 EA 01 05 8C E5 D7 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+
+***** onTestManufatureData *****
+resut= true, 广播包中 manufacture specific data 字段中MAC地址校验成功.
+
+
+2018年5月4日星期五 中国标准时间下午4:07:33
+2018年12月11日星期二 中国标准时间下午5:38:27
+2018年12月11日星期二 中国标准时间下午5:50:18

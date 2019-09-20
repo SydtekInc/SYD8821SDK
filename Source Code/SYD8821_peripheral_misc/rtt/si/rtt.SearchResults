@@ -1,0 +1,6 @@
+---- SEGGER_RTT_BUFFER_ALIGNMENT Matches (5 in 1 files) ----
+SEGGER_RTT.c (f:\syd8821\syd8821_sdk\source code\rtt):#ifndef   SEGGER_RTT_BUFFER_ALIGNMENT
+SEGGER_RTT.c (f:\syd8821\syd8821_sdk\source code\rtt):  #define SEGGER_RTT_BUFFER_ALIGNMENT                     0
+SEGGER_RTT.c (f:\syd8821\syd8821_sdk\source code\rtt):#if SEGGER_RTT_ALIGNMENT || SEGGER_RTT_BUFFER_ALIGNMENT
+SEGGER_RTT.c (f:\syd8821\syd8821_sdk\source code\rtt):#if SEGGER_RTT_BUFFER_ALIGNMENT
+SEGGER_RTT.c (f:\syd8821\syd8821_sdk\source code\rtt):  #define SEGGER_RTT_BUFFER_ALIGN(Var)  SEGGER_RTT_ALIGN(Var, SEGGER_RTT_BUFFER_ALIGNMENT)

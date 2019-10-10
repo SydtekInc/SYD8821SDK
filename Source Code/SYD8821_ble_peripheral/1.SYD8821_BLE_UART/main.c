@@ -52,13 +52,16 @@ uint8_t ADV_DATA[] = {
 						0X00,
 						0X00,
 						0X00,
-						0x06,// length
+						0x09,// length
 						0x09,// AD Type: Complete local name
+						'S',
+						'Y',
+						'D',
+						'_',
 						'U',
 						'A',
 						'R',
 						'T',
-						'F',
 					  };
 
 uint16_t ADV_DATA_SZ = sizeof(ADV_DATA); 
@@ -273,7 +276,7 @@ void ble_evt_callback(struct gap_ble_evt *p_evt)
 {
 	if(p_evt->evt_code == GAP_EVT_ADV_END)
 	{		
-		gap_s_adv_start();
+		gap_s_adv_start_powersaving();
 		#if defined(CONFIG_UART_ENABLE) || defined(_SYD_RTT_DEBUG_)
 		DBGPRINTF(("GAP_EVT_ADV_END\r\n"));
 		#endif
@@ -292,7 +295,7 @@ void ble_evt_callback(struct gap_ble_evt *p_evt)
 		DBGHEXDUMP("GAP_EVT_CONNECTED addr:",p_evt->evt.bond_dev_evt.addr,sizeof(p_evt->evt.bond_dev_evt.addr));
 		#endif
 		
-		BLSetConnectionUpdate(1);
+		//BLSetConnectionUpdate(1);
 	}
 	else if(p_evt->evt_code == GAP_EVT_DISCONNECTED) //断连事件
 	{	
@@ -304,7 +307,7 @@ void ble_evt_callback(struct gap_ble_evt *p_evt)
 		#elif defined(_SYD_RTT_DEBUG_)
 			DBGPRINTF("GAP_EVT_DISCONNECTED(%02x)\r\n",p_evt->evt.disconn_evt.reason);
 		#endif   
-		gap_s_adv_start();
+		gap_s_adv_start_powersaving();
 	}
 	else if(p_evt->evt_code == GAP_EVT_ATT_HANDLE_CONFIGURE)
 	{					
@@ -316,11 +319,13 @@ void ble_evt_callback(struct gap_ble_evt *p_evt)
 				{
 					DBGPRINTF(("start_tx enable\r\n"));
 					start_tx = 1;
+					PMU_CTRL->UART_EN = 1;    //不允许RF sleep时关闭XO，休眠的时候因为32Mhz晶振还在，所以功耗很高
 				}
 				else
 				{		
 					DBGPRINTF(("start_tx disable\r\n"));
 					start_tx = 0;
+					PMU_CTRL->UART_EN = 0;   //允许硬件自由控制32Mhz晶振，休眠的时候功耗很低
 				}
 			}
 		}	
@@ -513,6 +518,13 @@ void timer_uart_wait(void)
 	}
 }
 
+void Timer_Module_Init(void)
+{
+	timer_disable(TIMER_1); 
+	timer_enable(TIMER_1, timer_uart_wait, 32768/100, 1);//32768 = 1S  16384 = 500ms
+    NVIC_EnableIRQ(TIMER1_IRQn);
+}
+
 void gpio_init(void)
 {
 	uint8_t i;
@@ -584,12 +596,12 @@ int main()
 	
 	ble_init();
 	
-	sys_mcu_clock_set(MCU_CLOCK_64_MHZ);
+	sys_mcu_clock_set(MCU_CLOCK_16_MHZ);
 	// RC bumping
     sys_mcu_rc_calibration();
 	#ifdef USER_32K_CLOCK_RCOSC
 	sys_32k_clock_set(SYSTEM_32K_CLOCK_LPO);
-	delay_ms(500);
+	//delay_ms(500);
 	sys_32k_lpo_calibration();						//这是内部RC32k晶振的校准函数	经过该函数后定时器能够得到一个比较准确的值
 	#else
 	sys_32k_clock_set(SYSTEM_32K_CLOCK_XO);
@@ -613,21 +625,21 @@ int main()
 	
 	__enable_irq();	
 	
-	gap_s_adv_start();
+	gap_s_adv_start_powersaving();
 	#if defined(CONFIG_UART_ENABLE) || defined(_SYD_RTT_DEBUG_)
 	DBGPRINTF(("gap_s_adv_start\r\n"));
 	#endif
 	
 	while(1)
 	{				
-		ble_sched_execute();
-        gpo_toggle(LED2_Pin);
+		ble_sched_execute(); 
+        //gpo_toggle(LED2_Pin);
 		
 		if(start_tx==1){
 			if (!is_queue_empty(&rx_queue[UART_TOBLE_QUEUE_ID])){
 				if(timer_state_get(UART_WAIT_TIMER_ID) ==false)
 				{
-					timer_enable(UART_WAIT_TIMER_ID, timer_uart_wait, 32768/100,true);  //10MS
+					Timer_Module_Init();
 				}
 				if(queue_size(&rx_queue[UART_TOBLE_QUEUE_ID])>=UART_TOBLE_THU)
 				{
@@ -641,9 +653,11 @@ int main()
 			//DBGPRINTF(("size:%x\r\n",queue_size(&rx_queue[BLE_TOUART_QUEUE_ID])));
 			ble_to_uart_transfer();
 		}
-		
-		PMU_CTRL->UART_EN = 0;
-		SystemSleep(POWER_SAVING_RC_OFF, FLASH_LDO_MODULE, 11000 , (PMU_WAKEUP_CONFIG_TYPE)(FSM_SLEEP_EN|TIMER_WAKE_EN|RTC_WAKE_EN));
+		if(start_tx==0)
+		{
+		  PMU_CTRL->UART_EN = 0;
+		  SystemSleep(POWER_SAVING_RC_OFF, FLASH_LDO_MODULE, 11000 , (PMU_WAKEUP_CONFIG_TYPE)(FSM_SLEEP_EN|TIMER_WAKE_EN|RTC_WAKE_EN));
+		}
 	}	
 }
 

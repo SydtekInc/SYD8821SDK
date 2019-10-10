@@ -516,6 +516,13 @@ void timer_uart_wait(void)
 	}
 }
 
+void Timer_Module_Init(void)
+{
+	timer_disable(TIMER_1); 
+	timer_enable(TIMER_1, timer_uart_wait, 32768/100, 1);//32768 = 1S  16384 = 500ms
+    NVIC_EnableIRQ(TIMER1_IRQn);
+}
+
 void gpio_init(void)
 {
 	uint8_t i;
@@ -630,7 +637,7 @@ int main()
 			if (!is_queue_empty(&rx_queue[UART_TOBLE_QUEUE_ID])){
 				if(timer_state_get(UART_WAIT_TIMER_ID) ==false)
 				{
-					timer_enable(UART_WAIT_TIMER_ID, timer_uart_wait, 32768/100,true);  //10MS
+					Timer_Module_Init();
 				}
 				if(queue_size(&rx_queue[UART_TOBLE_QUEUE_ID])>=UART_TOBLE_THU)
 				{

@@ -4,11 +4,11 @@
 #include "ARMCM0.h"
 #include "ble_slave.h"
 
-//#define USER_32K_CLOCK_RCOSC
+#define USER_32K_CLOCK_RCOSC
 
 //RTT debug和串口debug在没有特殊处理的情况下只能够使用一个，也就是说下面的宏只能够开一个
 //#define CONFIG_UART_ENABLE
-#define _SYD_RTT_DEBUG_
+//#define _SYD_RTT_DEBUG_
 
 #define KEY_INT_PIN GPIO_14
 #define LED1_Pin GPIO_34

@@ -1,116 +1,0 @@
-Dependencies for Project 'Module_samples', Target 'SYD8821_CACHE': (DO NOT MODIFY !)
-F (..\main.c)(0x5CEFB8FE)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork -I..\..\..\Include -I..\..\iicoled -I..\..\..\Lib-I "F:\SYD8801\SYD8821\SYD8821_SDK\Source Code\SYD8821_peripheral_misc\iicoled\Keil\RTE"-I D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\main.o --omf_browse .\output\main.crf --depend .\output\main.d)
-I (..\..\..\Include\ARMCM0.h)(0x5C0E19A2)
-I (D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cm0.h)(0x55093C04)
-I (D:\keil_V516\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
-I (D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cmInstr.h)(0x55093C04)
-I (D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cmFunc.h)(0x55093C04)
-I (D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x50B2CC4C)
-I (..\..\..\Include\gpio.h)(0x5C0DD83E)
-I (..\..\..\Include\pad_mux_ctrl.h)(0x5C0DD83E)
-I (D:\keil_V516\ARM\ARMCC\include\stdbool.h)(0x55AEF5F2)
-I (..\..\..\Include\delay.h)(0x57883961)
-I (..\..\..\Include\led_key.h)(0x5B1A32A8)
-I (..\..\..\Include\uart.h)(0x5C0E0982)
-I (..\..\..\Include\queue.h)(0x5C0DD7D5)
-I (..\..\..\Include\debug.h)(0x5C127641)
-I (..\..\iicoled\config.h)(0x5C00FC0C)
-I (..\..\..\Include\i2c_master.h)(0x5C0DD83E)
-I (..\oled_9632.h)(0x5CEFB95D)
-F (..\oled_9632.c)(0x5CEFB915)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork -I..\..\..\Include -I..\..\iicoled -I..\..\..\Lib-I "F:\SYD8801\SYD8821\SYD8821_SDK\Source Code\SYD8821_peripheral_misc\iicoled\Keil\RTE"-I D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\oled_9632.o --omf_browse .\output\oled_9632.crf --depend .\output\oled_9632.d)
-I (..\oled_9632.h)(0x5CEFB95D)
-I (..\..\..\Include\ARMCM0.h)(0x5C0E19A2)
-I (D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cm0.h)(0x55093C04)
-I (D:\keil_V516\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
-I (D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cmInstr.h)(0x55093C04)
-I (D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cmFunc.h)(0x55093C04)
-I (D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x50B2CC4C)
-I (..\font.h)(0x5790A6E7)
-I (..\..\..\Include\pad_mux_ctrl.h)(0x5C0DD83E)
-I (D:\keil_V516\ARM\ARMCC\include\stdbool.h)(0x55AEF5F2)
-I (..\..\..\Include\gpio.h)(0x5C0DD83E)
-I (..\..\..\Include\i2c_master.h)(0x5C0DD83E)
-I (..\..\..\Include\delay.h)(0x57883961)
-I (D:\keil_V516\ARM\ARMCC\include\stdarg.h)(0x55AEF5F2)
-I (D:\keil_V516\ARM\ARMCC\include\stdio.h)(0x55AEF5F2)
-F (..\..\..\Source\gpio.c)(0x5C0DD9AC)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork -I..\..\..\Include -I..\..\iicoled -I..\..\..\Lib-I "F:\SYD8801\SYD8821\SYD8821_SDK\Source Code\SYD8821_peripheral_misc\iicoled\Keil\RTE"-I D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\gpio.o --omf_browse .\output\gpio.crf --depend .\output\gpio.d)
-I (..\..\..\Include\gpio.h)(0x5C0DD83E)
-I (..\..\..\Include\armcm0.h)(0x5C0E19A2)
-I (D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cm0.h)(0x55093C04)
-I (D:\keil_V516\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
-I (D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cmInstr.h)(0x55093C04)
-I (D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cmFunc.h)(0x55093C04)
-I (D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x50B2CC4C)
-F (..\..\..\Source\delay.c)(0x5C0FB993)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork -I..\..\..\Include -I..\..\iicoled -I..\..\..\Lib-I "F:\SYD8801\SYD8821\SYD8821_SDK\Source Code\SYD8821_peripheral_misc\iicoled\Keil\RTE"-I D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\delay.o --omf_browse .\output\delay.crf --depend .\output\delay.d)
-I (..\..\..\Include\delay.h)(0x57883961)
-I (..\..\..\Include\ARMCM0.h)(0x5C0E19A2)
-I (D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cm0.h)(0x55093C04)
-I (D:\keil_V516\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
-I (D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cmInstr.h)(0x55093C04)
-I (D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cmFunc.h)(0x55093C04)
-I (D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x50B2CC4C)
-F (..\..\..\Source\pad_mux_ctrl.c)(0x5C0DD83E)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork -I..\..\..\Include -I..\..\iicoled -I..\..\..\Lib-I "F:\SYD8801\SYD8821\SYD8821_SDK\Source Code\SYD8821_peripheral_misc\iicoled\Keil\RTE"-I D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\pad_mux_ctrl.o --omf_browse .\output\pad_mux_ctrl.crf --depend .\output\pad_mux_ctrl.d)
-I (..\..\..\Include\pad_mux_ctrl.h)(0x5C0DD83E)
-I (..\..\..\Include\ARMCM0.h)(0x5C0E19A2)
-I (D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cm0.h)(0x55093C04)
-I (D:\keil_V516\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
-I (D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cmInstr.h)(0x55093C04)
-I (D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cmFunc.h)(0x55093C04)
-I (D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x50B2CC4C)
-I (D:\keil_V516\ARM\ARMCC\include\stdbool.h)(0x55AEF5F2)
-F (..\..\..\Source\uart.c)(0x5C0E0982)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork -I..\..\..\Include -I..\..\iicoled -I..\..\..\Lib-I "F:\SYD8801\SYD8821\SYD8821_SDK\Source Code\SYD8821_peripheral_misc\iicoled\Keil\RTE"-I D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\uart.o --omf_browse .\output\uart.crf --depend .\output\uart.d)
-I (..\..\..\Include\uart.h)(0x5C0E0982)
-I (..\..\..\Include\ARMCM0.h)(0x5C0E19A2)
-I (D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cm0.h)(0x55093C04)
-I (D:\keil_V516\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
-I (D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cmInstr.h)(0x55093C04)
-I (D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cmFunc.h)(0x55093C04)
-I (D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x50B2CC4C)
-I (..\..\..\Include\queue.h)(0x5C0DD7D5)
-I (..\..\..\Include\uart2.h)(0x5C0DD7F3)
-I (D:\keil_V516\ARM\ARMCC\include\string.h)(0x55AEF5F2)
-F (..\..\..\Source\debug.c)(0x5C109DB0)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork -I..\..\..\Include -I..\..\iicoled -I..\..\..\Lib-I "F:\SYD8801\SYD8821\SYD8821_SDK\Source Code\SYD8821_peripheral_misc\iicoled\Keil\RTE"-I D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\debug.o --omf_browse .\output\debug.crf --depend .\output\debug.d)
-I (..\..\..\Include\debug.h)(0x5C127641)
-I (..\..\..\Include\ARMCM0.h)(0x5C0E19A2)
-I (D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cm0.h)(0x55093C04)
-I (D:\keil_V516\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
-I (D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cmInstr.h)(0x55093C04)
-I (D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cmFunc.h)(0x55093C04)
-I (D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x50B2CC4C)
-I (..\..\iicoled\config.h)(0x5C00FC0C)
-I (D:\keil_V516\ARM\ARMCC\include\stdbool.h)(0x55AEF5F2)
-I (..\..\..\Include\uart.h)(0x5C0E0982)
-I (..\..\..\Include\queue.h)(0x5C0DD7D5)
-I (D:\keil_V516\ARM\ARMCC\include\stdarg.h)(0x55AEF5F2)
-I (D:\keil_V516\ARM\ARMCC\include\stdio.h)(0x55AEF5F2)
-F (..\..\..\Source\queue.c)(0x5C0DD17D)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork -I..\..\..\Include -I..\..\iicoled -I..\..\..\Lib-I "F:\SYD8801\SYD8821\SYD8821_SDK\Source Code\SYD8821_peripheral_misc\iicoled\Keil\RTE"-I D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\queue.o --omf_browse .\output\queue.crf --depend .\output\queue.d)
-I (..\..\..\Include\queue.h)(0x5C0DD7D5)
-I (..\..\..\Include\armcm0.h)(0x5C0E19A2)
-I (D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cm0.h)(0x55093C04)
-I (D:\keil_V516\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
-I (D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cmInstr.h)(0x55093C04)
-I (D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cmFunc.h)(0x55093C04)
-I (D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x50B2CC4C)
-I (D:\keil_V516\ARM\ARMCC\include\string.h)(0x55AEF5F2)
-F (..\..\..\Source\i2c_master.c)(0x5C04CDDB)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork -I..\..\..\Include -I..\..\iicoled -I..\..\..\Lib-I "F:\SYD8801\SYD8821\SYD8821_SDK\Source Code\SYD8821_peripheral_misc\iicoled\Keil\RTE"-I D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\i2c_master.o --omf_browse .\output\i2c_master.crf --depend .\output\i2c_master.d)
-I (..\..\..\Include\i2c_master.h)(0x5C0DD83E)
-I (..\..\..\Include\ARMCM0.h)(0x5C0E19A2)
-I (D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cm0.h)(0x55093C04)
-I (D:\keil_V516\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
-I (D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cmInstr.h)(0x55093C04)
-I (D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cmFunc.h)(0x55093C04)
-I (D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x50B2CC4C)
-I (D:\keil_V516\ARM\ARMCC\include\stdbool.h)(0x55AEF5F2)
-I (..\..\..\Include\debug.h)(0x5C127641)
-I (..\..\iicoled\config.h)(0x5C00FC0C)
-I (..\..\..\Include\uart.h)(0x5C0E0982)
-I (..\..\..\Include\queue.h)(0x5C0DD7D5)
-I (D:\keil_V516\ARM\ARMCC\include\string.h)(0x55AEF5F2)
-F (RTE\Device\ARMCM0\startup_ARMCM0.s)(0x5B052977)(--cpu Cortex-M0 --li -g --apcs=interwork --pd "__MICROLIB SETA 1"-I "F:\SYD8801\SYD8821\SYD8821_SDK\Source Code\SYD8821_peripheral_misc\iicoled\Keil\RTE"-I D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM0\Include--pd "__UVISION_VERSION SETA 516" --pd "_RTE_ SETA 1" --pd "ARMCM0 SETA 1"-o .\output\startup_armcm0.o --depend .\output\startup_armcm0.d)
-F (RTE\Device\ARMCM0\system_ARMCM0.c)(0x5AA6424C)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork -I..\..\..\Include -I..\..\iicoled -I..\..\..\Lib-I "F:\SYD8801\SYD8821\SYD8821_SDK\Source Code\SYD8821_peripheral_misc\iicoled\Keil\RTE"-I D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include-I D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="516" -D_RTE_ -DARMCM0-o .\output\system_armcm0.o --omf_browse .\output\system_armcm0.crf --depend .\output\system_armcm0.d)
-I (..\..\..\Include\ARMCM0.h)(0x5C0E19A2)
-I (D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cm0.h)(0x55093C04)
-I (D:\keil_V516\ARM\ARMCC\include\stdint.h)(0x55AEF5F2)
-I (D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cmInstr.h)(0x55093C04)
-I (D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include\core_cmFunc.h)(0x55093C04)
-I (D:\keil_V516\ARM\PACK\ARM\CMSIS\4.3.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x50B2CC4C)

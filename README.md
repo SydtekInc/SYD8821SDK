@@ -116,3 +116,12 @@ B.原来在《Include》目录下的《ble_slave.h》文件挪到《lib》目录
 <br/><br/><br/>
 
 
+
+20191010  
+1.修改某些工程定时器驱动上的bug,涉及的工程有：  
+A.SYD8821_SDK\Source Code\SYD8821_ble_peripheral  
+B.5.SYD8821_BLE_security_connection  
+2.更新“SYD Service Utility release”工具到版本“SYD Service Utility release V2.1 20190617”  
+3.更新“SYDTEK Studio  release”工具到版本“SYDTEK Studio  release V4.7.6 20190930 144056”  
+4.找SDK目录中增加文件《SYDTEK入门指南.pdf》   
+<br/><br/><br/>

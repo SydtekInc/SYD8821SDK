@@ -30,6 +30,12 @@ uint8_t BLE_SendData(uint8_t *buf, uint8_t len);
 
 uint8_t timer_wait_cnt=0;
 
+uint8_t uart_data_temp[20];
+/*
+BIT7:1:±ª’º”√ 0£∫ø’œ–
+*/
+uint8_t uart_data_temp_state=0;
+
 uint8_t ADV_DATA[] = {
 						0x03,// length
 						0x19,
@@ -470,23 +476,30 @@ static void ble_init()
 
 void uart_to_ble_transfer(void){
 	if(start_tx==1){
-		if(rx_queue[UART_TOBLE_QUEUE_ID].head != rx_queue[UART_TOBLE_QUEUE_ID].tail)
+		if(!(is_queue_empty(&rx_queue[UART_TOBLE_QUEUE_ID])))
 		{
-			uint8_t i=0,num=(rx_queue[UART_TOBLE_QUEUE_ID].tail-rx_queue[UART_TOBLE_QUEUE_ID].head)/20+1,num_residue=(rx_queue[UART_TOBLE_QUEUE_ID].tail-rx_queue[UART_TOBLE_QUEUE_ID].head)%20;
+			uint8_t i=0,j=0,num=queue_size(&rx_queue[UART_TOBLE_QUEUE_ID])/20+1,num_residue=queue_size(&rx_queue[UART_TOBLE_QUEUE_ID])%20;
 			for(i=0;i<num;i++){
-				if(i>=(num-1))
+				
+				if(!(uart_data_temp_state & BIT7))  //ø’œ–
 				{
-					if(BLE_SendData(&rx_queue[UART_TOBLE_QUEUE_ID].data[rx_queue[UART_TOBLE_QUEUE_ID].head],num_residue)){
+					for(j=0;j<20;j++) dequeue(&rx_queue[UART_TOBLE_QUEUE_ID], &uart_data_temp[j]);
+				}
+				if(i>=(num-1))
+				{ 
+					uart_data_temp_state |=BIT7;
+					if(BLE_SendData(uart_data_temp,num_residue)){
 						num=0;
-						rx_queue[UART_TOBLE_QUEUE_ID].head+=num_residue;
+						uart_data_temp_state &=~BIT7;
 					}
 					else break;
 				}
 				else
 				{
-					if(BLE_SendData(&rx_queue[UART_TOBLE_QUEUE_ID].data[rx_queue[UART_TOBLE_QUEUE_ID].head],20)) 
+					uart_data_temp_state |=BIT7;
+					if(BLE_SendData(uart_data_temp,20)) 
 					{
-						rx_queue[UART_TOBLE_QUEUE_ID].head+=20;
+						uart_data_temp_state &=~BIT7;
 					}
 					else break;
 				}
@@ -596,7 +609,7 @@ int main()
 	
 	ble_init();
 	
-	sys_mcu_clock_set(MCU_CLOCK_16_MHZ);
+	sys_mcu_clock_set(MCU_CLOCK_64_MHZ);
 	// RC bumping
     sys_mcu_rc_calibration();
 	#ifdef USER_32K_CLOCK_RCOSC

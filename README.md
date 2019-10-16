@@ -124,4 +124,5 @@ B.5.SYD8821_BLE_security_connection
 2.更新“SYD Service Utility release”工具到版本“SYD Service Utility release V2.1 20190617”  
 3.更新“SYDTEK Studio  release”工具到版本“SYDTEK Studio  release V4.7.6 20190930 144056”  
 4.找SDK目录中增加文件《SYDTEK入门指南.pdf》   
+5.修改透传工程，解决发送完后发送错误问题“Source Code\SYD8821_ble_peripheral\1.SYD8821_BLE_UART”   
 <br/><br/><br/>

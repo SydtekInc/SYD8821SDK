@@ -141,22 +141,22 @@ void pdm_enable_amic_i2s(int en)
 }
 
 
-void set_amic_gain(uint8_t gain)
-{
-	uint8_t tmp=0x00;
-	PDM_CTRL->R_AMIC_PGA_GAIN=gain;
-	BBRFWrite(0x7f, 0x02);
-	BBRFRead(0x25, &tmp);
-	tmp|=gain;
-	BBRFWrite(0x25, tmp);
-	BBRFRead(0x25, &tmp);
-}
+//void set_amic_gain(uint8_t gain)
+//{
+//	uint8_t tmp=0x00;
+//	PDM_CTRL->R_AMIC_PGA_GAIN=gain;
+//	BBRFWrite(0x7f, 0x02);
+//	BBRFRead(0x25, &tmp);
+//	tmp|=gain;
+//	BBRFWrite(0x25, tmp);
+//	BBRFRead(0x25, &tmp);
+//}
 
 
-void pdm_set_amic_gain(uint8_t gain)
-{
-		set_amic_gain(gain);		
-}
+//void pdm_set_amic_gain(uint8_t gain)
+//{
+//		set_amic_gain(gain);		
+//}
 
 uint8_t pdm_is_enable(){
 	

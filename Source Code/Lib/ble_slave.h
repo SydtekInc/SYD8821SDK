@@ -562,6 +562,9 @@ struct gap_link_params {
 				GAP_EVT_ATT_HANDLE_CONFIRMATION	蓝牙在收到指示确认时上报该事件，标志着指示操作完成
 				GAP_EVT_ATT_HANDLE_CONFIGURE	蓝牙在收到配置CCCD也就是主机使能notify或者指示功能的时候上报
 																			该事件，代表主机要开启相应功能
+		    GAP_EVT_ADV_START  广播开始事件，在开始广播或者重新开始广播时调用
+		    GAP_EVT_CONN_UPDATE_INSTANT_PASS  GAP_EVT_CONN_UPDATE_INSTANT_PASS 是 update成功的 evt，没有
+		                                  带参数回调
 *说明： SYD8821协议栈初始化的时候要调用api:gap_s_evt_handler_set设置gap_evt_callback结构体，该结构体
 包含了协议栈上报BLE事件的接口，SYD8821的协议栈在发现BLE的状态发生变化（比如发生了连接或者断线）的时
 候，协议栈将会往APP层（用户代码）上报BLE事件，同时还会上报gap_ble_evt结构体，该结构体中的evt_code变
@@ -584,6 +587,10 @@ enum _GAP_EVT_{
 	GAP_EVT_ATT_EXECUTE_WRITE	    = 0x2000,
 	GAP_EVT_ATT_HANDLE_CONFIRMATION	= 0x4000,
 	GAP_EVT_ATT_HANDLE_CONFIGURE	= 0x8000,
+	GAP_EVT_ADV_START                   = 1UL << 16,
+	GAP_EVT_CONN_UPDATE_INSTANT_PASS    = 1UL << 17,
+	GAP_EVT_SHOW_NUMERIC_COMPARISON    	= 1UL << 18,
+	GAP_EVT_WARNING_REPORT				= 1UL << 19,
 };
 
 

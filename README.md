@@ -134,4 +134,5 @@ B.5.SYD8821_BLE_security_connection
 2.更新主机lib,增加文件“syd8821_ble_master_1V1_20191129.lib”  “syd8821_ble_master_1V2_20191129.lib”  “syd8821_ble_master_1V3_20191129.lib”  
 3.更新“SYDTEK Studio  release”工具到版本“SYDTEK Studio  release V4.9.7 20191125 164102”  
 4.增加工程“SYD8821_SDK\Source Code\SYD8821_peripheral_misc\SYD8821_BLE_HID_Music_play”  
+5.增加工程“Source Code\SYD8821_peripheral_misc\verdor datas”  
 <br/><br/><br/>

@@ -3056,4 +3056,16 @@ extern void ll_set_replying_packet_timer(uint8_t timer);
 **************************************************************************************************/
 extern void amic_set_bias(AMIC_BIAS value);
 
+
+extern void gap_s_adv_start_powersaving(void);
+extern void gap_s_adv_stop_powersaving(void);
+
+extern uint8_t gap_s_verdor_datas_get(uint8_t *datas);
+extern uint8_t gap_s_verdor_datas_set(uint8_t *datas);
+extern void systemtick_delay(uint16_t n);
+extern void sys_mcu_rc_calibrationHF(void);
+extern uint8_t Setting4kUpdate(uint8_t *data,  uint32_t checksum,  uint8_t Xor);
+extern void SetDevAddr_toflash(struct gap_ble_addr* p_dev);
+extern uint8_t flash_peotect_key_confirm(uint32_t key);
+extern uint8_t bm_s_bond_info_isvalid(void);
 #endif

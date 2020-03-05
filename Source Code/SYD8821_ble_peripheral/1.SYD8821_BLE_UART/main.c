@@ -625,6 +625,7 @@ int main()
 	#ifdef _SYD_RTT_DEBUG_
 		DebugLogInit();
 		dbg_printf("SYD RTT Init\r\n");
+		PMU_CTRL->UART_EN = 1;
 	#endif
 	
 	ble_uart_init(UART_RTS_CTS_DISABLE, UART_BAUD_115200);
@@ -666,11 +667,13 @@ int main()
 			//DBGPRINTF(("size:%x\r\n",queue_size(&rx_queue[BLE_TOUART_QUEUE_ID])));
 			ble_to_uart_transfer();
 		}
+		#ifdef _SWDDEBUG_DISENABLE_
 		if(start_tx==0)
 		{
 		  PMU_CTRL->UART_EN = 0;
 		  SystemSleep(POWER_SAVING_RC_OFF, FLASH_LDO_MODULE, 11000 , (PMU_WAKEUP_CONFIG_TYPE)(FSM_SLEEP_EN|TIMER_WAKE_EN|RTC_WAKE_EN));
 		}
+		#endif
 	}	
 }
 

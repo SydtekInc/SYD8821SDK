@@ -136,4 +136,6 @@ B.5.SYD8821_BLE_security_connection
 4.增加工程“SYD8821_SDK\Source Code\SYD8821_peripheral_misc\SYD8821_BLE_HID_Music_play”  
 5.增加工程“Source Code\SYD8821_peripheral_misc\verdor datas”  
 6.修改工程“1.SYD8821_BLE_UART”，RTT打印可以如意的进行！  
+7.增加工程“Source Code\SYD8821_peripheral_misc\SYD8821_BLE_UART_ROSC"，该工程使用内部晶振（ROSC）进行BLE透传  
+8.增加工程“Source Code\SYD8821_ble_peripheral\7.SYD8821_CON_ADV”  
 <br/><br/><br/>

@@ -1,6 +1,23 @@
 # SYD8821SDK    
 ## 本程序版权属于成都盛芯微科技SYDTEK，更多内容请看官网：<a href="http://www.sydtek.com/" title="Title">http://www.sydtek.com/</a>
   
+  
+# 使用方法:  
+这里可以点击右上角的"Code"按钮然后点击"Download ZIP"进行下载  
+如果您的电脑上安装了Git工具,可以使用下面的方式进行克隆:  
+国内站点克隆:  
+git clone --recursive https://gitee.com/SydtekInc/SYD8821SDK.git  
+国外站点克隆:  
+git clone --recursive https://github.com/SydtekInc/SYD8821SDK.git  
+
+# 注意:过于git目录的调整(20200923 110431)  
+从该版本起不再<README.md>文件中追加更新内容,以后的内容更新都放在commit的详细内容中,方便管理以及简化readme.  
+从该版本起删除<tool>并且会增加子模块"SydtekInc inform"该子模块指向仓库"https://gitee.com/SydtekInc/SydtekInc_inform.git".  
+Studio release工具请从SydtekInc_inform/SYDTEK Studio release获取最新版本或者适合自己的版本  
+Studio factory工具请从SydtekInc_inform/SYDTEK Studio factory获取最新版本或者适合自己的版本  
+SydtekInc inform包含了官方所有工具的更新和一些公司的公告  
+<br/><br/><br/>
+  
 2018-04-20  
 Initial version;  
 <br/><br/><br/>

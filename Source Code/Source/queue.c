@@ -18,7 +18,7 @@ int enqueue_all(QUEUE * queue, uint8_t *data,uint16_t size)
 {
 	if((queue->tail+size)  >= queue->size)
 	{
-		uint16_t len=size-queue->tail;
+		uint16_t len=queue->size-queue->tail;
 		memcpy(&queue->data[queue->tail],data,len);
 		size -=len;
 		if(size>=queue->head) size=queue->head-1;

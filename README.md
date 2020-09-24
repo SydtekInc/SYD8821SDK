@@ -17,7 +17,15 @@ Studio release工具请从SydtekInc_inform/SYDTEK Studio release获取最新版�
 Studio factory工具请从SydtekInc_inform/SYDTEK Studio factory获取最新版本或者适合自己的版本  
 SydtekInc inform包含了官方所有工具的更新和一些公司的公告  
 <br/><br/><br/>
-  
+ 
+
+
+
+
+
+
+<br/><br/><br/>
+# 下面是之前的README.MD的内容,将来不再更新:    
 2018-04-20  
 Initial version;  
 <br/><br/><br/>
